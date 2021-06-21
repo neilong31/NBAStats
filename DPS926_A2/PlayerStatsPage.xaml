@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DPS926_A2.PlayerStatsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="This Seasons Stats For: " FontSize="Title" Padding="30,10,30,10" HorizontalOptions="Center"/>
+            <Label FontSize="Title" Padding="30,10,30,10" HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span x:Name="firstNameSpan" Text="" FontSize="Title" FontAttributes="Bold" />
+                        <Span x:Name="lastNameSpan" Text="" FontSize="Title" FontAttributes="Bold" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Grid RowSpacing="0"
+          ColumnSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <BoxView Color="AliceBlue" />
+                <Label >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="PTS Per Game:" FontSize="Subtitle" FontAttributes="Bold" />
+                            <Span x:Name="ppgSpan" Text="" FontAttributes="Bold" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <BoxView Grid.Column="1"
+                 Color="AliceBlue" />
+                <Label Grid.Column="1"
+                   Text="Upper center"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="ASTs Per Game:" FontSize="Subtitle" FontAttributes="Bold" />
+                            <Span x:Name="astSpan" Text="" FontAttributes="Bold" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                
+                <BoxView Grid.Column="2"
+                 Color="AliceBlue" />
+                <Label Grid.Column="2"
+                   Text="Upper center"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="REBs Per Game:" FontSize="Subtitle" FontAttributes="Bold" />
+                            <Span x:Name="rebSpan" Text="" FontAttributes="Bold" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <BoxView Grid.Row="1"
+                 Color="AliceBlue" />
+                <Label Grid.Row="1"
+                   Text="Upper center"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="BLKs Per Game:" FontSize="Subtitle" FontAttributes="Bold" />
+                            <Span x:Name="blkSpan" Text="" FontAttributes="Bold" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <BoxView Grid.Row="1"
+                    Grid.Column="1"
+                 Color="AliceBlue" />
+                <Label Grid.Row="1"
+                    Grid.Column="1"
+                   Text="Upper center"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="STLs Per Game:" FontSize="Subtitle" FontAttributes="Bold" />
+                            <Span x:Name="stlSpan" Text="" FontAttributes="Bold" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <BoxView Grid.Row="1"
+                         Grid.Column="2"
+                 Color="AliceBlue" />
+                <Label Grid.Row="1"
+                       Grid.Column="2"
+                   Text="Upper center"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="TOs Per Game:  " FontSize="Subtitle" FontAttributes="Bold"/>
+                            <Span x:Name="turnoverSpan" Text="" FontAttributes="Bold"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+            <Button x:Name="favouriteBtn" Text="Favourite" BackgroundColor="Gold" Clicked="favouriteBtn_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

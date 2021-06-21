@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DPS926_A2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="12" CornerRadius="0">
+            <Label Text="NBA Stats" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Lets find those stats!" FontSize="Title" Padding="30,10,30,10" HorizontalOptions="Center"/>
+        <Label Text="You can look at different teams and search the stats of specific players. You can also save your player to quickly view their stats at a glance!" FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="Search" FontSize="Title" Padding="30,10,30,10" HorizontalOptions="Center"/>
+        <StackLayout VerticalOptions="Center">
+            <Button x:Name="playersPageBtn" Text="Find Player's Stats" WidthRequest="200" HorizontalOptions="Center" Clicked="playersPageBtn_Clicked"></Button>
+            <Button x:Name="teamsPageBtn" Text="View Teams" WidthRequest="200" HorizontalOptions="Center" Clicked="teamsPageBtn_Clicked"></Button>
+        </StackLayout>
+        <Label Text="Favourites" FontSize="Title" Padding="30,10,30,10" HorizontalOptions="Center"/>
+        <StackLayout VerticalOptions="Center">
+            <Button x:Name="favouritePlayersPageBtn" Text="Favourite Players" WidthRequest="200" HorizontalOptions="Center" Clicked="favouritePlayersPageBtn_Clicked"></Button>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
